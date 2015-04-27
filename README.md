@@ -1,6 +1,6 @@
 # Course Roster JS for Epicodus
-## by Daniel Toader and Cynthia Wilhelm
-### Date: April 21, 2015
+## by Daniel Toader, Cynthia Wilhelm, and Virginie Trubiano
+### Date: April 21, 2015 (last update April 27, 2015)
 #### Description
 Simple student roster single page app that lets a user add, remove, and update students and courses. This app is practice with AngularUI Router.
 
@@ -8,7 +8,7 @@ Simple student roster single page app that lets a user add, remove, and update s
 1. Clone this git repository
 2. Load index.html in your browser.
 
-#### Copyright © 2015, Daniel Toader and Cynthia Wilhelm
+#### Copyright © 2015, Daniel Toader, Cynthia Wilhelm, and Virginie Trubiano
 
 #### License: [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 
