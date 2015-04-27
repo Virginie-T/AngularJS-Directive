@@ -6,4 +6,10 @@ courseRoster.controller('CoursesCtrl', function CoursesCtrl($scope, CoursesFacto
     $scope.CoursesFactory.addCourse(name);
     $scope.courseName = null;
   }
+
+  $scope.alert = function() {
+    alert("Alert, alert! alarm!");
+  };
+
+  $scope.coursez = "terrible Angular course";
 });

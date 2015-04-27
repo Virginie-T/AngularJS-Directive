@@ -21,12 +21,28 @@ courseRoster.config(function($stateProvider) {
 });
 
 courseRoster.directive("enter", function() {
-  return function (scope, element) {
-    element.bind("mouseenter", function() {
-      element.addClass('btn btn-default');
-    });
-    element.bind("mouseleave", function() {
-      element.removeClass('btn btn-default');
-    });
-  }
+  return {
+    restrict: 'A',
+    link: function () {
+      alert('I m a panda');
+    }
+  };
+});
+
+courseRoster.directive("alertUser", function() {
+  return {
+    scope: {
+      alert: '='
+    },
+    template: '<button ng-click="alert()">Click me!</button>'
+  };
+});
+
+courseRoster.directive("sampleCourse", function() {
+  return {
+    scope: {
+      coursez: "@"
+    },
+    template: '{{ coursez }}'
+  };
 });
