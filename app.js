@@ -20,15 +20,13 @@ courseRoster.config(function($stateProvider) {
   });
 });
 
-courseRoster.directive("welcomeText", function() {
-  return {
-    restrict: "E",
-    template: "<div>Welcome!</div>"
-  };
-});
-
-courseRoster.directive("welkkomen", function() {
-  return function (scope, element, attrs) {
-    element.text(scope.message + " " + attrs.message);
-  };
+courseRoster.directive("enter", function() {
+  return function (scope, element) {
+    element.bind("mouseenter", function() {
+      element.addClass('btn btn-default');
+    });
+    element.bind("mouseleave", function() {
+      element.removeClass('btn btn-default');
+    });
+  }
 });
